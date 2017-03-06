@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-workspace name="Projects" soapui-version="5.3.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:recentItemCollection>
+    <con:moduleId>StarterPageModule</con:moduleId>
+    <con:itemId>3e963cc3-e8e6-46e8-b75b-502a9299ce11</con:itemId>
+  </con:recentItemCollection>
+  <con:recentItemCollection>
+    <con:moduleId>ProjectsModule</con:moduleId>
+    <con:itemId>ab875c18-0dc1-437d-a23d-8e8578216934</con:itemId>
+  </con:recentItemCollection>
+  <con:navigatorNodeCollection>
+    <con:rootNodeLabel>Projects</con:rootNodeLabel>
+    <con:expandNodeState>
+      <con:id>3e963cc3-e8e6-46e8-b75b-502a9299ce11</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+    <con:expandNodeState>
+      <con:id>ab875c18-0dc1-437d-a23d-8e8578216934</con:id>
+      <con:expandState>true</con:expandState>
+    </con:expandNodeState>
+  </con:navigatorNodeCollection>
+  <con:navigatorNodeCollection>
+    <con:rootNodeLabel>operations</con:rootNodeLabel>
+    <con:expandNodeState>
+      <con:id>3e963cc3-e8e6-46e8-b75b-502a9299ce11</con:id>
+      <con:expandState>false</con:expandState>
+    </con:expandNodeState>
+  </con:navigatorNodeCollection>
+  <con:project name="Getting Started">C:/Users/Kapten/Documents/Getting-Started-soapui-project.xml</con:project>
+  <con:project name="BrewBiz">C:/Users/Kapten/Documents/BrewBiz-soapui-project.xml</con:project>
+  <con:collectInfoForSupport>false</con:collectInfoForSupport>
+</con:soapui-workspace>
