@@ -29,7 +29,7 @@
     <links/>
   </basics>
   <resources>
-    <resource name="CurrencyConvertor-soapui-project.xml" type="xml" path="{scenario}/../../SERVER/C:/MyUTPScripts/Examples/SoapUI_example/CurrencyConvertor-soapui-project.xml"/>
+    <resource name="CurrencyConvertor-soapui-project.xml" type="xml" path="{scenario}/../..//SERVER/C:/MyUTPScripts/Examples/SoapUI_example/CurrencyConvertor-soapui-project.xml"/>
   </resources>
   <testnodes>
     <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode" username="ofisgate" password="yTxZMSQAPPfPMe*3"/>
