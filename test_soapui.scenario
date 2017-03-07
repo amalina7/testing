@@ -29,7 +29,8 @@
     <links/>
   </basics>
   <resources>
-    <resource name="CurrencyConvertor-soapui-project.xml" type="xml" path="{scenario}/../..///SERVER/C:/MyUTPScripts/Examples/SoapUI_example/CurrencyConvertor-soapui-project.xml"/>
+    <resource name="currency-soapui-project.xml" type="xml" path="{scenario}/currency-soapui-project.xml"/>
+    <resource type="ajt" path="{scenario}/../../"/>
   </resources>
   <testnodes>
     <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode" username="ofisgate" password="yTxZMSQAPPfPMe*3"/>
@@ -41,7 +42,6 @@
     <bundle name="ds" version="2.0"/>
     <bundle name="seleniumrc" version="2.53"/>
     <bundle name="htmlunit" version="2.15.2648"/>
-    <bundle name="sql" version="1.0"/>
     <bundle name="soapui" version="5.2.1"/>
   </bundles>
   <datasources/>
@@ -56,10 +56,10 @@
       <opt name="SummaryStepIsEmpty" value="false"/>
       <opt name="DynamicIpAddress" value="false"/>
       <opt name="EnableSavingLogs" value="true"/>
-      <opt name="PercentageLogsSaved" value="100"/>
+      <opt name="PercentageLogsSaved" value="10"/>
       <opt name="AlwaysSaveLogOnFailure" value="true"/>
-      <opt name="maxSizeReponseSavings" value="false"/>
-      <opt name="sizeValueResponseSavings" value="0"/>
+      <opt name="maxSizeReponseSavings" value="true"/>
+      <opt name="sizeValueResponseSavings" value="64"/>
       <opt name="SleepTime" value="0"/>
       <opt name="FixedSleepTime" value="0"/>
       <opt name="MinSleepTime" value="0"/>
@@ -113,25 +113,22 @@
   </options>
   <templates>
     <controller name="Iteration1">
-      <round iterations="1" totalusers="1"/>
+      <round totalexecutions="100" name="100 Executions Controller"/>
     </controller>
     <testcase name="Testcase1">
       <test>
-        <run name="Untitled1" langtype="soapui" resource="CurrencyConvertor-soapui-project.xml" testclass="TestSuite 1" method="TestCase 1"/>
-      </test>
-    </testcase>
-    <testcase name="Testcase2">
-      <test>
-        <run name="Untitled1" langtype="soapui" resource="CurrencyConvertor-soapui-project.xml" testclass="TestSuite 1" method="TestCase 1"/>
+        <run name="Untitled1" langtype="soapui" resource="currency-soapui-project.xml" testclass="TestSuite 1" method="TestCase 1">
+          <argument name="Untitled1" method="getData" dpl="TheLocker"/>
+        </run>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="false"/>
-  <execution type="functionaltest" subtype="functional">
-    <iteration name="Iteration1" controller="Iteration1">
-      <testcase name="Testcase1" users="1"/>
+  <execution type="loadtest" subtype="performance">
+    <iteration name="Iteration1" controller="Iteration1" completiontype="totalexecutions">
+      <testcase name="Testcase1" users="5"/>
     </iteration>
   </execution>
   <logs/>
