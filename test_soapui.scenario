@@ -131,6 +131,11 @@
         <filter/>
       </glassbox>
     </host>
+    <host name="CRM DB DATA 2" location="http://54.202.52.239:8080/APCMonitor">
+      <glassbox>
+        <filter/>
+      </glassbox>
+    </host>
   </monitoring>
   <execution type="loadtest" subtype="performance">
     <iteration name="Iteration1" controller="Iteration1" completiontype="totalexecutions">
