@@ -131,7 +131,7 @@
   </monitoring>
   <execution type="loadtest" subtype="performance">
     <iteration name="Iteration1" controller="Iteration1" completiontype="totalexecutions">
-      <testcase name="Testcase1" users="1"/>
+      <testcase name="Testcase1" users="5"/>
     </iteration>
   </execution>
   <logs/>
