@@ -113,7 +113,9 @@
   </options>
   <templates>
     <controller name="Iteration1">
-      <round totalexecutions="100" name="100 Executions Controller"/>
+      <round name="Testcase Executions">
+        <testcase name="Testcase1" totalexecutions="1"/>
+      </round>
     </controller>
     <testcase name="Testcase1">
       <test>
@@ -138,7 +140,7 @@
     </host>
   </monitoring>
   <execution type="loadtest" subtype="performance">
-    <iteration name="Iteration1" controller="Iteration1" completiontype="totalexecutions">
+    <iteration name="Iteration1" controller="Iteration1" completiontype="testcaseexecutions">
       <testcase name="Testcase1" users="5"/>
     </iteration>
   </execution>
