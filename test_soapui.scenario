@@ -136,6 +136,11 @@
         <filter/>
       </glassbox>
     </host>
+    <host name="CRM DB DATA3" location="http://localhost:8080/TMServer/ws/TestNode">
+      <glassbox>
+        <filter/>
+      </glassbox>
+    </host>
   </monitoring>
   <execution type="loadtest" subtype="performance">
     <iteration name="Iteration1" controller="Iteration1" completiontype="totalexecutions">
