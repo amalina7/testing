@@ -126,7 +126,7 @@
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
   <monitoring enablednodes="true" enabledtarget="true">
-    <host name="CRM DB DATA" location="HTTP://54.202.52.239:8443/APCMonitor">
+    <host name="CRM DB DATA" location="HTTPS://54.202.52.239:8443/APCMonitor">
       <glassbox>
         <filter/>
       </glassbox>
