@@ -26,7 +26,7 @@
     <creator/>
     <versions/>
     <categorization/>
-    <links/>
+    <links>    </links>
   </basics>
   <resources>
     <resource name="test_website.ds" type="ds" path="{scenario}/test_website.ds"/>
@@ -128,7 +128,7 @@
   <monitoring enablednodes="true" enabledtarget="false"/>
   <execution type="loadtest" subtype="performance">
     <iteration name="Iteration1" controller="Iteration1" completiontype="totalexecutions">
-      <testcase name="Testcase1" users="5"/>
+      <testcase name="Testcase1" users="2"/>
     </iteration>
     <iteration name="Iteration2" controller="Iteration2" completiontype="totalexecutions">
       <testcase name="Testcase1" users="3"/>
