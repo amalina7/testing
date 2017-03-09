@@ -125,7 +125,13 @@
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
-  <monitoring enablednodes="true" enabledtarget="false"/>
+  <monitoring enablednodes="true" enabledtarget="true">
+    <host name="CRM DB Data" location="https://ec2-54-202-52-239.us-west-2.compute.amazonaws.com:8443/APCMonitor">
+      <glassbox>
+        <filter/>
+      </glassbox>
+    </host>
+  </monitoring>
   <execution type="loadtest" subtype="load">
     <iteration name="Iteration1" controller="Iteration1" completiontype="duration">
       <testcase name="Testcase1" users="3"/>
