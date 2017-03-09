@@ -26,7 +26,7 @@
     <creator/>
     <versions/>
     <categorization/>
-    <links/>
+    <links>    </links>
   </basics>
   <resources>
     <resource name="tester.ds" type="ds" path="{scenario}/tester.ds"/>
@@ -122,7 +122,7 @@
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
-  <monitoring enablednodes="true" enabledtarget="true">
+  <monitoring enablednodes="true">
     <host name="CRM DB Data" location="https://ec2-54-202-52-239.us-west-2.compute.amazonaws.com:8443/ACPMonitor">
       <glassbox>
         <filter/>
