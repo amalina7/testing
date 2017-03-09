@@ -29,7 +29,7 @@
     <links/>
   </basics>
   <resources>
-    <resource name="grovy.groovy" type="groovy" path="{scenario}/grovy.groovy"/>
+    <resource name="currency-soapui-project.xml" type="xml" path="{scenario}/currency-soapui-project.xml"/>
   </resources>
   <testnodes>
     <node name="localhost" location="http://localhost:8080/TMServer/ws/TestNode" username="ofisgate" password="yTxZMSQAPPfPMe*3"/>
@@ -41,8 +41,7 @@
     <bundle name="ds" version="2.0"/>
     <bundle name="seleniumrc" version="2.53"/>
     <bundle name="htmlunit" version="2.15.2648"/>
-    <bundle name="ajt" version="1.0"/>
-    <bundle name="groovy" version="1.6.9"/>
+    <bundle name="soapui" version="5.2.1"/>
   </bundles>
   <datasources/>
   <options>
@@ -113,20 +112,26 @@
   </options>
   <templates>
     <controller name="Iteration1">
-      <round totalexecutions="100" name="100 Executions Controller"/>
+      <round totalexecutions="1" name="1 Executions Controller"/>
     </controller>
     <testcase name="Testcase1">
       <test>
-        <run name="Untitled1" langtype="groovy" resource="grovy.groovy"/>
+        <run name="Untitled1" langtype="soapui" resource="currency-soapui-project.xml" testclass="TestSuite 1" method="TestCase 1"/>
       </test>
     </testcase>
     <assertsuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
     <storesuite xmlns="www.pushtotest.com/tm5" name="Optional"/>
   </templates>
-  <monitoring enablednodes="true" enabledtarget="false"/>
+  <monitoring enablednodes="true" enabledtarget="true">
+    <host name="CRM DB Data" location="https://54.202.52.239:8443/APCMonitor">
+      <glassbox>
+        <filter/>
+      </glassbox>
+    </host>
+  </monitoring>
   <execution type="loadtest" subtype="performance">
     <iteration name="Iteration1" controller="Iteration1" completiontype="totalexecutions">
-      <testcase name="Testcase1" users="51"/>
+      <testcase name="Testcase1" users="1"/>
     </iteration>
   </execution>
   <logs/>
