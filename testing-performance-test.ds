@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testcase name='testing-performance-test' description='' author='' version=''>
+
+<metainfo>
+</metainfo>
+
+<dpl filename="" exectype="" errorhandling=""/>
+
+<step action="navigateTo" value="&quot;http://www.mhc-e1mas.com/test2&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="0">
+	<dialect type="sahi">
+		<accessor type="navigateTo" value='' selected="true"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value='' selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;arafatgmail.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="1">
+	<dialect type="sahi">
+		<accessor type="setValue" value="emailbox(&quot;email&quot;)" selected="true"/>
+		<accessor type="setValue" value="emailbox(0)" selected="false"/>
+		<accessor type="setValue" value="emailbox(&quot;form-control&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='email']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='login-form']/form/div/div[3]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;arafat@gmail.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="2">
+	<dialect type="sahi">
+		<accessor type="setValue" value="emailbox(&quot;email&quot;)" selected="true"/>
+		<accessor type="setValue" value="emailbox(0)" selected="false"/>
+		<accessor type="setValue" value="emailbox(&quot;form-control&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='email']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='login-form']/form/div/div[3]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;araat&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="3">
+	<dialect type="sahi">
+		<accessor type="setValue" value="password(&quot;pass&quot;)" selected="true"/>
+		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;form-control&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='pass']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='login-form']/form/div/div[4]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[4]/div/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="4">
+	<dialect type="sahi">
+		<accessor type="click" value="div(0)" selected="true"/>
+		<accessor type="click" value="div(&quot;container&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div&quot;" selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="5">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;Sign In&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;btn-login&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;btn btn-block btn-primary&quot;)" selected="false"/>
+		<accessor type="click" value="submit(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[@name='btn-login']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='login-form']/form/div/div[6]/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;arafat@gmail.com&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="6">
+	<dialect type="sahi">
+		<accessor type="setValue" value="emailbox(&quot;email&quot;)" selected="true"/>
+		<accessor type="setValue" value="emailbox(0)" selected="false"/>
+		<accessor type="setValue" value="emailbox(&quot;form-control&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='email']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='login-form']/form/div/div[4]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="setValue" value="&quot;arafat&quot;" type="web" desc='' isThinkTime='false' isCommented='false' sequence="7">
+	<dialect type="sahi">
+		<accessor type="setValue" value="password(&quot;pass&quot;)" selected="true"/>
+		<accessor type="setValue" value="password(0)" selected="false"/>
+		<accessor type="setValue" value="password(&quot;form-control&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//input[@name='pass']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='login-form']/form/div/div[5]/div/input&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//div[5]/div/input&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="8">
+	<dialect type="sahi">
+		<accessor type="click" value="div(0)" selected="true"/>
+		<accessor type="click" value="div(&quot;container&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//div&quot;" selected="true"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="9">
+	<dialect type="sahi">
+		<accessor type="click" value="submit(&quot;Sign In&quot;)" selected="true"/>
+		<accessor type="click" value="submit(&quot;btn-login&quot;)" selected="false"/>
+		<accessor type="click" value="submit(&quot;btn btn-block btn-primary&quot;)" selected="false"/>
+		<accessor type="click" value="submit(0)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//button[@name='btn-login']&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='login-form']/form/div/div[7]/button&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//button&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+
+<step action="click" value='' type="web" desc='' isThinkTime='false' isCommented='false' sequence="10">
+	<dialect type="sahi">
+		<accessor type="click" value="link(&quot;Sign Out&quot;)" selected="true"/>
+		<accessor type="click" value="link(2)" selected="false"/>
+		<accessor type="click" value="link(&quot;http://www.mhc-e1mas.com/test2/logout.php?logout&quot;)" selected="false"/>
+	</dialect>
+	<dialect type="selenium">
+		<accessor attribute='' value="&quot;//a[contains(text(),'Sign Out')]&quot;" selected="true"/>
+		<accessor attribute='' value="&quot;//div[@id='navbar']/ul[2]/li/ul/li/a&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//a[contains(@href, 'logout.php?logout')]&quot;" selected="false"/>
+		<accessor attribute='' value="&quot;//li/ul/li/a&quot;" selected="false"/>
+	</dialect>
+</step>
+
+
+</testcase>
